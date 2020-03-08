@@ -8,7 +8,7 @@ import java.util.List;
 @Repository
 public interface ContaRepository extends JpaRepository<ContaModel, Long> {
 
-    List<ContaModel> findContabilidadeModelByEmissor(String emissor);
-    ContaModel findContabilidadeModelById(Long id);
+    List<ContaModel> findContaModelByEmissor(String emissor);
+    ContaModel findContaModelById(Long id);
 
 }

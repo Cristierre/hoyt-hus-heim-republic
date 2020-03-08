@@ -13,9 +13,9 @@ import java.util.Date;
 @Entity
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ContabilidadeModel {
+public class ContaModel {
 
-    public ContabilidadeModel() {
+    public ContaModel() {
     }
 
     @Id

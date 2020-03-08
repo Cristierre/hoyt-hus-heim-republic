@@ -5,7 +5,7 @@ import lombok.Builder;
 import java.util.Date;
 
 @Builder
-public class ContabilidadeDto {
+public class ContaDto {
 
     private Long id;
     private String emissor;

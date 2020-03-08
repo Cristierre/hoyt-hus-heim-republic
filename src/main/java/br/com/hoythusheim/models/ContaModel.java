@@ -3,15 +3,15 @@ package br.com.hoythusheim.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Builder;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotEmpty;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ContaModel {
 
@@ -22,11 +22,10 @@ public class ContaModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @NotEmpty
+
     private String emissor;
 
-    @NotEmpty
-    private Double valor;
+    private BigDecimal valor;
 
     private Date diaRecebimento;
     private Date diaVencimento;
@@ -34,4 +33,11 @@ public class ContaModel {
     private String statusConta;
 
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

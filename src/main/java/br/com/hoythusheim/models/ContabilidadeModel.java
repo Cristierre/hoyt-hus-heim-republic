@@ -23,7 +23,7 @@ public class ContabilidadeModel {
     Long id;
 
     @NotEmpty
-    private String nomeConta;
+    private String emissor;
 
     @NotEmpty
     private Double valor;
